@@ -19,6 +19,10 @@ BODY{
     height: 90vh;
     width: 100%;
     background-color: black;
+    
+}
+.container:hover{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(145, 39, 39));
 }
 .main{
     width: 0px;
@@ -31,10 +35,10 @@ BODY{
     top: 35%;
     transform: translate(-50%,-50%);
     
-    border-left-color: rgb(186, 168, 95) ;
+    border-left-color:  rgb(190, 188, 180) ;
     border-top-color:transparent;
-    border-bottom-color: rgb(186, 168, 95);
-    border-right-color:  rgb(186, 168, 95);
+    border-bottom-color: rgb(190, 188, 180);
+    border-right-color:  rgb(154, 153, 143);
     transform: skew(10deg);
     border-radius:4px ;
     z-index: 3;
@@ -49,7 +53,7 @@ BODY{
     top: -20%;
     background-color: transparent;
     border: 203px  solid transparent;
-    border-bottom-color: rgb(186, 168, 95);
+    border-bottom-color: rgb(190, 188, 180);
     transform: skew(10deg);
     transform: translate(9%,1%);
     border-radius: 10px;
@@ -161,103 +165,3 @@ button{
  }
 
 
- @media screen and (max-width: 412px){
-    .main{
-        width: 0px;
-        height: 0px;
-        /* background-color: transparent; */
-        border: 100px  solid white;
-        box-sizing: border-box;
-        position: absolute;
-        left: 20%;
-        top: 55%;
-        transform: translate(-50%,-50%);
-        
-        border-left-color: rgb(186, 168, 95) ;
-        border-top-color:transparent;
-        border-bottom-color: rgb(186, 168, 95);
-        border-right-color:  rgb(186, 168, 95);
-        transform: skew(10deg);
-        border-radius:4px ;
-        z-index: 3;
-    }
-    .open{
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        box-sizing: border-box;
-        left: 12.3%;
-        /* top: -43%; */
-        top: 33.4%;
-        background-color: transparent;
-        border: 100px  solid transparent;
-        border-bottom-color: rgb(186, 168, 95);
-        transform: skew(10deg);
-        border-radius: 10px;
-        
-    }
-    .letter1{
-        background-color: white;
-        color:black;
-        height: 230px;
-        width: 180px;
-        transform: skew(10deg);
-        position: absolute;
-        left: 19.9%;
-        top: 48%;
-        font-size:xx-small;
-      
-    } 
-    .letter1:hover{
-        animation-name: inform;
-        animation-duration: 5s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-    }
-    @keyframes inform{
-        
-         from{
-            top:48%;
-            
-        }
-        to{
-            top:38%;
-           
-        }
-       
-        
-    }
-    .letter2{
-        background-color: pink;
-        color:black;
-        height: 230px;
-        width: 180px;
-        transform: skew(10deg);
-        position: absolute;
-        left: 19.9%;
-        top: 51%;
-        font-size:xx-small;
-      
-    } 
-    .letter2:hover{
-        animation-name: l2;
-        animation-duration: 5s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-    }
-    @keyframes l2{
-       
-        from{
-            top:51%;
-           
-        }
-        to{
-            top:20%;
-           
-        }
-       
-    
-    }
- }
