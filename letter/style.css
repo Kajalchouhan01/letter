@@ -21,7 +21,7 @@ BODY{
     background-color: black;
 }
 .main{
-    width: 80px;
+    width: 0px;
     height: 0px;
     /* background-color: transparent; */
     border: 200px  solid white;
@@ -45,12 +45,13 @@ BODY{
     position: absolute;
     box-sizing: border-box;
     left: 45.3%;
-    /* top: -43%; */
+    
     top: -20%;
     background-color: transparent;
     border: 203px  solid transparent;
     border-bottom-color: rgb(186, 168, 95);
     transform: skew(10deg);
+    transform: translate(9%,1%);
     border-radius: 10px;
     
 }
